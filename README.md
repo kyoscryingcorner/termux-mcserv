@@ -1,5 +1,4 @@
 # termux-mcserv1.8.8
-This shell script will install a Minecraft Paper 1.8.8 server with all the needed packages.
 
 ## Installation guide :blue_book:
 ```
