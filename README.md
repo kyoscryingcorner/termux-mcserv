@@ -5,8 +5,8 @@ This bash script will install a Minecraft Paper 1.8.8 server with all the needed
 ```
 git clone https://github.com/eremophobia/termux-mcserv1.8.8.git
 cd termux-mcserv1.8.8
-chmod +x install-1.8.8-server.sh
-./install-1.8.8-server.sh
+chmod +x install.sh
+./install.sh
 ```
 
 then go into the server directory.
