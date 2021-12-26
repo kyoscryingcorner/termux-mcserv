@@ -19,3 +19,6 @@ inside the server directory.
 
 Example:
 `java -Xms256M -Xmx2G -jar server.jar`
+
+##### nano Documentation
+https://www.nano-editor.org/docs.php
