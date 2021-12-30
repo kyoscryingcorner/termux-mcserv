@@ -421,7 +421,7 @@ echo -e "Thanks for using my installation script ${RED}:)"
 echo " "
 
         else
-                echo -e "${RED}Please answer yes or no.${RESETBG}"
+                echo -e "${RED}Please input a version.${RESETBG}"
 fi
 
 ################################################################################################
