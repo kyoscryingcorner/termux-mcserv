@@ -1,4 +1,5 @@
-# termux-mcserv1.8.8
+# termux-mcserv
+>Previously known as termux-mcserv-1.8.8
 
 ## Installation guide :blue_book:
 ```
