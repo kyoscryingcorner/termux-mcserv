@@ -3,14 +3,14 @@
 
 ## Installation guide :blue_book:
 ```
-git clone https://github.com/eremophobia/termux-mcserv1.8.8.git
-cd termux-mcserv1.8.8
+git clone https://github.com/eremophobia/termux-mcserv.git
+cd termux-mcserv
 chmod +x install.sh
 ./install.sh
 ```
 
 then go into the server directory.
-`cd server1.8.8`
+`cd server(version)`
 
 To run the server you must type
 `java -jar server.jar`
