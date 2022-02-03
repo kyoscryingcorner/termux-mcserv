@@ -12,11 +12,11 @@ RESETBG="$(printf '\e[0m\n')"
 clear
 sleep 1
 
-############################################################################################# 1.8.8 v
-
 #User input required (version)
 echo "${YELLOWBG}${BLACK}Which verison do you want to install?"
-read -p "Available versions: 1.8.8 , 1.9.4 , 1.10.2 , 1.11.2 , 1.12.2 .${RESETBG}${CYAN} " input
+read -p "Available versions: 1.8.8 , 1.9.4 , 1.10.2 , 1.11.2 , 1.12.2 , 1.14.4 , 1.15.2 , 1.16.5 .${RESETBG}${CYAN} " input
+
+############################################################################################# 1.8.8 v
 
 	if [ "$input" == "1.8.8" ]; then
 
@@ -420,8 +420,328 @@ echo " "
 echo -e "Thanks for using my installation script ${RED}:)"
 echo " "
 
+################################################################################################ 1.13.2 v
+
+        elif [ "$input" == "1.13.2" ]; then
+
+        mkdir server1.13.2
+        cd server1.13.2
+
+                echo -e "${RED}Installation will require some time, sit back and make a coffee."
+                echo -e "${YELLOW}DO NOT STOP THIS SCRIPT!"
+
+
+        echo -e "${GREEN}"
+
+sleep 5
+
+cat << "EOF"
+
+█░█ █▀█ █▀▄ ▄▀█ ▀█▀ █ █▄░█ █▀▀ █
+█▄█ █▀▀ █▄▀ █▀█ ░█░ █ █░▀█ █▄█ ▄
+
+EOF
+
+echo "Searching & Updating packages ..."
+
+        echo -e "${YELLOW}"
+
+apt-get -q update -y > /dev/null && apt-get -q upgrade -y > /dev/null
+echo -e "${RED}Done!"
+
+        echo -e "${GREEN}"
+
+cat << "EOF"
+
+█ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░ █ █▄░█ █▀▀ █
+█ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄ █ █░▀█ █▄█ ▄
+
+EOF
+
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing nano ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq nano -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing wget ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq wget -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing Java17 ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq openjdk-17 -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+
+echo -e "${RED}[${GREEN}#${RED}] Installing server1.13.2.jar ..."
+
+        echo -e "${CYANBG}${BLACK}"
+
+wget -O server1.13.2.jar https://papermc.io/api/v2/projects/paper/versions/1.13.2/builds/657/downloads/paper-1.13.2-657.jar -q --show-progress
+
+        echo -e "${RESETBG}${GREEN}"
+
+cat << "EOF"
+
+█▀▄ █▀█ █▄░█ █▀▀ █
+█▄▀ █▄█ █░▀█ ██▄ ▄
+
+EOF
+echo -e "${YELLOW}Installation complete!"
+echo -e "(nano documentation: ${CYAN}https://www.nano-editor.org/docs.php${YELLOW})"
+echo " "
+echo -e "Thanks for using my installation script ${RED}:)"
+echo " "
+
+################################################################################################ 1.14.4 v
+
+        elif [ "$input" == "1.14.4" ]; then
+
+        mkdir server1.14.4
+        cd server1.14.4
+
+                echo -e "${RED}Installation will require some time, sit back and make a coffee."
+                echo -e "${YELLOW}DO NOT STOP THIS SCRIPT!"
+
+
+        echo -e "${GREEN}"
+
+sleep 5
+
+cat << "EOF"
+
+█░█ █▀█ █▀▄ ▄▀█ ▀█▀ █ █▄░█ █▀▀ █
+█▄█ █▀▀ █▄▀ █▀█ ░█░ █ █░▀█ █▄█ ▄
+
+EOF
+
+echo "Searching & Updating packages ..."
+
+        echo -e "${YELLOW}"
+
+apt-get -q update -y > /dev/null && apt-get -q upgrade -y > /dev/null
+echo -e "${RED}Done!"
+
+        echo -e "${GREEN}"
+
+cat << "EOF"
+
+█ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░ █ █▄░█ █▀▀ █
+█ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄ █ █░▀█ █▄█ ▄
+
+EOF
+
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing nano ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq nano -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing wget ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq wget -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing Java17 ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq openjdk-17 -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+
+echo -e "${RED}[${GREEN}#${RED}] Installing server1.13.2.jar ..."
+
+        echo -e "${CYANBG}${BLACK}"
+
+wget -O server1.14.4.jar https://papermc.io/api/v2/projects/paper/versions/1.14.4/builds/245/downloads/paper-1.14.4-245.jar -q --show-progress
+
+        echo -e "${RESETBG}${GREEN}"
+
+cat << "EOF"
+
+█▀▄ █▀█ █▄░█ █▀▀ █
+█▄▀ █▄█ █░▀█ ██▄ ▄
+
+EOF
+echo -e "${YELLOW}Installation complete!"
+echo -e "(nano documentation: ${CYAN}https://www.nano-editor.org/docs.php${YELLOW})"
+echo " "
+echo -e "Thanks for using my installation script ${RED}:)"
+echo " "
+ 
+################################################################################################ 1.15.2 v
+
+        elif [ "$input" == "1.15.2" ]; then
+
+        mkdir server1.15.2
+        cd server1.15.2
+
+                echo -e "${RED}Installation will require some time, sit back and make a coffee."
+                echo -e "${YELLOW}DO NOT STOP THIS SCRIPT!"
+
+
+        echo -e "${GREEN}"
+
+sleep 5
+
+cat << "EOF"
+
+█░█ █▀█ █▀▄ ▄▀█ ▀█▀ █ █▄░█ █▀▀ █
+█▄█ █▀▀ █▄▀ █▀█ ░█░ █ █░▀█ █▄█ ▄
+
+EOF
+
+echo "Searching & Updating packages ..."
+
+        echo -e "${YELLOW}"
+
+apt-get -q update -y > /dev/null && apt-get -q upgrade -y > /dev/null
+echo -e "${RED}Done!"
+
+        echo -e "${GREEN}"
+
+cat << "EOF"
+
+█ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░ █ █▄░█ █▀▀ █
+█ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄ █ █░▀█ █▄█ ▄
+
+EOF
+
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing nano ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq nano -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing wget ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq wget -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing Java17 ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq openjdk-17 -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+
+echo -e "${RED}[${GREEN}#${RED}] Installing server1.13.2.jar ..."
+
+        echo -e "${CYANBG}${BLACK}"
+
+wget -O server1.15.2.jar https://papermc.io/api/v2/projects/paper/versions/1.15.2/builds/393/downloads/paper-1.15.2-393.jar -q --show-progress
+
+        echo -e "${RESETBG}${GREEN}"
+
+cat << "EOF"
+
+█▀▄ █▀█ █▄░█ █▀▀ █
+█▄▀ █▄█ █░▀█ ██▄ ▄
+
+EOF
+echo -e "${YELLOW}Installation complete!"
+echo -e "(nano documentation: ${CYAN}https://www.nano-editor.org/docs.php${YELLOW})"
+echo " "
+echo -e "Thanks for using my installation script ${RED}:)"
+echo " "
+
+################################################################################################ 1.16.5 v
+
+        elif [ "$input" == "1.16.5" ]; then
+
+        mkdir server1.16.5
+        cd server1.16.5
+
+                echo -e "${RED}Installation will require some time, sit back and make a coffee."
+                echo -e "${YELLOW}DO NOT STOP THIS SCRIPT!"
+
+
+        echo -e "${GREEN}"
+
+sleep 5
+
+cat << "EOF"
+
+█░█ █▀█ █▀▄ ▄▀█ ▀█▀ █ █▄░█ █▀▀ █
+█▄█ █▀▀ █▄▀ █▀█ ░█░ █ █░▀█ █▄█ ▄
+
+EOF
+
+echo "Searching & Updating packages ..."
+
+        echo -e "${YELLOW}"
+
+apt-get -q update -y > /dev/null && apt-get -q upgrade -y > /dev/null
+echo -e "${RED}Done!"
+
+        echo -e "${GREEN}"
+
+cat << "EOF"
+
+█ █▄░█ █▀ ▀█▀ ▄▀█ █░░ █░░ █ █▄░█ █▀▀ █
+█ █░▀█ ▄█ ░█░ █▀█ █▄▄ █▄▄ █ █░▀█ █▄█ ▄
+
+EOF
+
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing nano ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq nano -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing wget ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq wget -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+echo -e "${RED}[${GREEN}+${RED}] ${MAGENTA}Installing Java17 ..."
+
+        echo -e "${YELLOW}"
+
+apt-get install -qq openjdk-17 -y > /dev/null
+echo -e "${RED}Done!"
+echo " "
+
+echo -e "${RED}[${GREEN}#${RED}] Installing server1.13.2.jar ..."
+
+        echo -e "${CYANBG}${BLACK}"
+
+wget -O server1.16.5.jar https://papermc.io/api/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar -q --show-progress
+
+        echo -e "${RESETBG}${GREEN}"
+
+cat << "EOF"
+
+█▀▄ █▀█ █▄░█ █▀▀ █
+█▄▀ █▄█ █░▀█ ██▄ ▄
+
+EOF
+echo -e "${YELLOW}Installation complete!"
+echo -e "(nano documentation: ${CYAN}https://www.nano-editor.org/docs.php${YELLOW})"
+echo " "
+echo -e "Thanks for using my installation script ${RED}:)"
+echo " "
+
+################################################################################################ Invalid Input
+
         else
                 echo -e "${RED}Please input a version.${RESETBG}"
 fi
-
-################################################################################################
