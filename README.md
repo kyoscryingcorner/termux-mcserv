@@ -3,7 +3,7 @@
 
 ## Installation guide :blue_book:
 ```
-git clone https://github.com/eremophobia/termux-mcserv.git
+git clone https://github.com/puxt/termux-mcserv.git
 cd termux-mcserv
 chmod +x install.sh
 ./install.sh
